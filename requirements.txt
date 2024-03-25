@@ -1,0 +1,4 @@
+django
+djlint
+django-crispy-forms
+crispy-bootstrap4
