@@ -55,7 +55,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'store_clothes.views.categories', # updated
-                'cart.context_processors.cart',  #updated
+                'cart.context_processors.cart',  # updated
             ],
         },
     },
