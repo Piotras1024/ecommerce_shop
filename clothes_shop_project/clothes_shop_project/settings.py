@@ -26,6 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'mathfilters', #Django app mathfitler from the site
+
     'store_clothes', #Django app
 
     'cart', #Django app

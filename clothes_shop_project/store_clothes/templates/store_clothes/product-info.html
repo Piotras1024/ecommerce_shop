@@ -100,6 +100,8 @@
 
 <script>
 
+    // Add button
+
     $(document).on('click', '#add-button', function(e){
 
         e.preventDefault();
@@ -117,7 +119,9 @@
 
                 success: function(json){
 
-                    console.log(json)
+                    // console.log(json)
+
+                    document.getElementById("cart-qty").textContent = json.qty
 
                 },
 
