@@ -1,0 +1,63 @@
+{% include "store_clothes/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <style>
+
+        body{
+
+            background-color: gray;
+
+        }
+
+    </style>
+
+    <body>
+
+        <br>
+
+        <div class="container bg-white shadow-md p-5 form-layout">
+            <h3> Stwórz nowe konto </h3>
+
+            <h5> Kup swoje ulubione ciuchy dzisiaj ! </h5>
+
+            <br>
+            <br>
+
+            <form method="POST" autocomplete="off">
+
+                {% csrf_token %}
+
+                {{form.username|as_crispy_field}}
+                <br><br>
+                {{form.email|as_crispy_field}}
+                <br><br>
+                {{form.password1|as_crispy_field}}
+                <br>
+                {{form.password2|as_crispy_field}}
+                <br>
+
+                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> &nbsp; Stwóz konto </button>
+
+
+
+            </form>
+
+
+
+        </div>
+
+
+    <br><br>
+
+
+    </body>
+
+
+
+
+{% endblock %}
