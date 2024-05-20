@@ -114,19 +114,40 @@
             <ul class="navbar-nav ms-auto">
 
 
-                <li class="nav-item">
-            
-                    <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"> Register </a>
+                {% if user.is_authenticated %}
 
-                </li>
+                  <li class="nav-item">
+
+                    <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'dashboard' %}"> Dashboard </a>
+
+                    </li>
+
+                {% else %}
+                    <li class="nav-item">
+
+                     <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"> Register </a>
+
+                    </li>
+                {% endif %}
 
 
-                <li class="nav-item">
 
-                    <a class="btn btn-alert navbar-btn text-white" type="button"  href="/"> Login </a>
 
-                </li>
+                {% if user.is_authenticated %}
 
+                    <li class="nav-item">
+
+                    <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'user-logout' %}"> Logout </a>
+
+                    </li>
+                {% else %}
+
+                    <li class="nav-item">
+
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"> Login </a>
+
+                    </li>
+                {% endif %}
 
                 &nbsp; &nbsp; &nbsp;
 
@@ -178,6 +199,38 @@
 
     <body>
 
+    {% for message in messages %}
+
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+
+            <h6 id="message-timer" class="alert alert-success text-center">{{message}}</h6>
+
+        {% endif %}
+
+    {% endfor %}
+
+
+        {% for message in messages %}
+
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+
+            <h6 id="message-timer" class="alert alert-danger text-center">{{message}}</h6>
+
+        {% endif %}
+
+    {% endfor %}
+
+
+            {% for message in messages %}
+
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+
+            <h6 id="message-timer" class="alert alert-success text-center">{{message}}</h6>
+
+        {% endif %}
+
+    {% endfor %}
+
 
         {% block content %} 
         
@@ -194,6 +247,8 @@
 
 
     </body>
+
+    <script src="{% static 'js/app.js' %}"></script>
 
 
 </html>

@@ -21,11 +21,10 @@
         <br>
 
         <div class="container bg-white shadow-md p-5 form-layout">
-            <h3> Stwórz nowe konto </h3>
+            <h3> Zaloguj się na swoje konto </h3>
 
-            <h5> Kup swoje ulubione ciuchy dzisiaj ! </h5>
 
-            <hr><br>
+            <hr>
 
             <form method="POST" autocomplete="off">
 
@@ -33,23 +32,25 @@
 
                 {{form.username|as_crispy_field}}
                 <br>
-                {{form.email|as_crispy_field}}
-                <br>
-                {{form.password1|as_crispy_field}}
-                <br>
-                {{form.password2|as_crispy_field}}
+                {{form.password|as_crispy_field}}
                 <br>
 
-                <button type="submit" class="btn btn-primary navbar-btn text-white d-block mx-auto w-100"> &nbsp; Stwóz konto </button>
-
+                <button type="submit" class="btn btn-primary navbar-btn text-white d-block mx-auto w-100"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; Zaloguj się </button>
 
                 <br><hr>
 
+                {{form.non_field_errors}}
+
                 <div class="text-center">
 
-                    <a href="{% url 'my-login' %}"> Masz już konto ? </a>
+                    <a href="{% url 'register' %}"> Nie masz jeszcze konta ? </a>
+
+                    <br><br>
+
+                    <a href="{% url 'reset_password' %}"> Zapomniałes hasła ? </a>
 
                 </div>
+
 
             </form>
 

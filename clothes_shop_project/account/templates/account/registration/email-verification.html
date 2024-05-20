@@ -1,0 +1,14 @@
+{% autoescape off %}
+
+Witaj,
+
+Dziękuje za rejestrację na stronie Sklep odzieżowy Daszewice.
+
+Proszę zweryfikuj konto, poprzez kliknięcie linku poniżej :
+
+http://{{domain}}{% url 'email-verification' uidb64=uid token=token%}
+
+
+
+
+{% endautoescape %}
