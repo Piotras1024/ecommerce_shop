@@ -27,13 +27,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'mathfilters',  #Django app mathfitler from the site
+    'mathfilters',
 
     'store_clothes',  #Django app
 
     'cart',  #Django app
 
     'account',  #Django app
+
+    'payment', #Django app
 
     'crispy_forms',  # Crispy forms
 ]

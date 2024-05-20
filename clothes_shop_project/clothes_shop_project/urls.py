@@ -18,6 +18,9 @@ urlpatterns = [
     # Account url
     path('account/', include('account.urls')),
 
+    # Payment url
+    path('payment/', include('payment.urls'))
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
