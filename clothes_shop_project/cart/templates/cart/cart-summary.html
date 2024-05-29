@@ -123,7 +123,15 @@
         <div class="h6 fw-bold"> Sub total: zł <div id="total" class="d-inline-flex"> {{cart.get_total}} <!-- cart.get_total --> </div></div>
  
       </div>
- 
+
+      <br>
+
+      <div class="col-12 text-end mt-3">
+        <a href="{% url 'checkout' %}" class="btn btn-primary my-2">
+          &nbsp;Proceed to checkout
+        </a>
+      </div>
+
 
     </div>
 
