@@ -31,14 +31,21 @@ INSTALLED_APPS = [
 
     'store_clothes',  #Django app
 
-    'cart',  #Django app
+    'cart',  # Django app
 
-    'account',  #Django app
+    'account',  # Django app
 
-    'payment', #Django app
+    'payment',  # Django app
 
     'crispy_forms',  # Crispy forms
+
+    'storages',  # Aws helper
 ]
+
+# To un-block PayPal popups - NB!
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
