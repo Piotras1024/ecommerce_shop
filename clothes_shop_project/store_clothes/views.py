@@ -3,6 +3,8 @@ from django.shortcuts import get_object_or_404
 
 from . models import Category, Product
 
+from django.http import JsonResponse
+from django.http import HttpResponse
 # Create your views here.
 
 
@@ -36,3 +38,4 @@ def product_info(request, product_slug):
     context = {'product': product}
 
     return render(request, 'store_clothes/product-info.html', context=context)
+
