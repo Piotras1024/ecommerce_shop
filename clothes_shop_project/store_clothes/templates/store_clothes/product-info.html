@@ -32,14 +32,12 @@
                         <div class="row p-3">
                             <div class="col-6">
                                 <label for="size-select">Rozmiar:</label>
-                                {% if any_available %}
+                                {% if sizes_availability %}
                                     <select id="size-select" onchange="updateQuantityOptions()">
                                         {% for size, availability in sizes_availability %}
-                                            {% if availability > 0 %}
-                                                <option value="{{ size }}" data-availability="{{ availability }}">
-                                                    {{ size }} - dostępne {{ availability }} szt.
-                                                </option>
-                                            {% endif %}
+                                            <option value="{{ size }}" data-availability="{{ availability }}">
+                                                {{ size }} - dostępne {{ availability }} szt.
+                                            </option>
                                         {% endfor %}
                                     </select>
                                 {% else %}
@@ -47,7 +45,7 @@
                                 {% endif %}
                             </div>
                             <div class="col-6">
-                                <label for="quantity-select">Ilość:</label>
+                                <label id="quantity-label" for="quantity-select">Ilość:</label>
                                 <select id="quantity-select">
                                     <!-- Opcje ilości będą wstawiane dynamicznie przez JavaScript -->
                                 </select>
@@ -70,18 +68,23 @@
     function updateQuantityOptions() {
         var sizeSelect = document.getElementById('size-select');
         var quantitySelect = document.getElementById('quantity-select');
+        var quantityLabel = document.getElementById('quantity-label');
         var selectedSize = sizeSelect.options[sizeSelect.selectedIndex];
         var maxQuantity = parseInt(selectedSize.getAttribute('data-availability'), 10);
 
-        while (quantitySelect.options.length > 0) {
-            quantitySelect.remove(0);
-        }
-
-        for (var i = 1; i <= maxQuantity; i++) {
-            var option = document.createElement('option');
-            option.value = i;
-            option.text = i;
-            quantitySelect.appendChild(option);
+        quantitySelect.innerHTML = '';
+        if (maxQuantity === 0) {
+            quantitySelect.style.display = 'none';
+            quantityLabel.textContent = 'Ten rozmiar jest niedostępny';
+        } else {
+            quantitySelect.style.display = 'inline-block';
+            quantityLabel.textContent = 'Ilość:';
+            for (var i = 1; i <= maxQuantity; i++) {
+                var option = document.createElement('option');
+                option.value = i;
+                option.text = i;
+                quantitySelect.appendChild(option);
+            }
         }
     }
 
