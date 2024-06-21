@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
 
 from .cart import Cart
-from store_clothes.models import Product
+from store_clothes.models import Product, ProductSize
 
 
 # Create your views here.
@@ -57,17 +57,29 @@ def cart_update(request):
 
     cart = Cart(request)
 
-    if request.POST.get('action') == 'post':
+    cart = Cart(request)
 
+    if request.POST.get('action') == 'post':
         product_id = int(request.POST.get('product_id'))
         product_quantity = int(request.POST.get('product_quantity'))
+        size_name = request.POST.get('size_name')  # Pobieranie rozmiaru z formularza
 
-        cart.update(product=product_id, qty=product_quantity)
+
+        # Pobranie produktu na podstawie ID
+        product = Product.objects.get(id=product_id)
+        # Pobrać rozmiary powiązane z danym produktem
+        product_sizes = ProductSize.objects.filter(product=product).select_related('size')
+        # Tworzenie słownika dostępności dla rozmiarów powiązanych z produktem
+        sizes_availability = {ps.size.size_name: ps.availability for ps in product_sizes}
+
+        if product_quantity > sizes_availability.get(size_name, 0):
+            return JsonResponse({
+                'error': f'Produkt {product.title} jest dostępny tylko w ilości {sizes_availability[size_name]}'
+            }, status=400)
+        else:
+            cart.update(product=product_id, qty=product_quantity)
 
         cart_quantity = cart.__len__()
-
         cart_total = cart.get_total()
 
-        response = JsonResponse({'qty': cart_quantity, 'total': cart_total})
-
-        return response
+        return JsonResponse({'qty': cart_quantity, 'total': cart_total, 'sizes': sizes_availability})
