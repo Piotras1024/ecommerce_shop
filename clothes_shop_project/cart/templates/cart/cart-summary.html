@@ -14,8 +14,8 @@
         <div id="notification-container"></div> <!-- zmiana -->
 
         <!-- loop -->
-        {% for item in cart %}
-        {% with product=item.product %}
+        {% for item in cart.cart %}
+            {% for product in item.sizes %}
         <br>
         <div class="row mb-4 border product-item">
             <div class="col-md-3 col-lg-2 order-md-first bg-light">
@@ -25,7 +25,7 @@
             <div class="col-md-9 col-lg-10 ps-md-3 ps-lg-10">
                 <a href="{{product.get_absolute_url}}" class="text-info text-decoration-none">
                     <!-- Product get absolute url -->
-                    <h1 class="h5 pt-2"> {{product.title}} <!-- Product title --> </h1>
+                    <h1 class="h5 pt-2"> {{product.title}}  <!-- Product title --> </h1>
                 </a>
                 <div class="border">
                     <div class="col border-bottom">
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        {% endwith %}
+        {% endfor %}
         {% endfor %}
         <!-- end loop -->
 

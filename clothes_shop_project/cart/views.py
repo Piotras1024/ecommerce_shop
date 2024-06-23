@@ -55,7 +55,6 @@ def cart_delete(request):
 
 def cart_update(request):
 
-    cart = Cart(request)
 
     cart = Cart(request)
 

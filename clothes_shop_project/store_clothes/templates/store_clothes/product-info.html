@@ -25,7 +25,7 @@
                     <div class="col border-bottom">
                         <div class="row p-3">
                             <div class="col-6">Cena</div>
-                            <div class="col-6 text-end"><span class="h4 fw-bold">zł {{ product.price }}</span></div>
+                            <div class="col-6 text-end" id="cena_produktow"><span class="h4 fw-bold"> {{ size}} zł </span></div>
                         </div>
                     </div>
                     <div class="col">
@@ -65,55 +65,12 @@
 </div>
 
 <script>
-    function updateQuantityOptions() {
-        var sizeSelect = document.getElementById('size-select');
-        var quantitySelect = document.getElementById('quantity-select');
-        var quantityLabel = document.getElementById('quantity-label');
-        var selectedSize = sizeSelect.options[sizeSelect.selectedIndex];
-        var maxQuantity = parseInt(selectedSize.getAttribute('data-availability'), 10);
-
-        quantitySelect.innerHTML = '';
-        if (maxQuantity === 0) {
-            quantitySelect.style.display = 'none';
-            quantityLabel.textContent = 'Ten rozmiar jest niedostępny';
-        } else {
-            quantitySelect.style.display = 'inline-block';
-            quantityLabel.textContent = 'Ilość:';
-            for (var i = 1; i <= maxQuantity; i++) {
-                var option = document.createElement('option');
-                option.value = i;
-                option.text = i;
-                quantitySelect.appendChild(option);
-            }
-        }
-    }
-
-    $(document).on('click', '#add-button', function(e){
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: '{% url "cart-add" %}',
-            data: {
-                product_id: $(this).val(),
-                product_size: $('#size-select option:selected').val().split(' - ')[0],
-                product_quantity: $('#quantity-select').val(),
-                csrfmiddlewaretoken: "{{ csrf_token }}",
-                action: 'post'
-            },
-            success: function(json){
-                document.getElementById("cart-qty").textContent = json.qty;
-                alert('Produkt dodany do koszyka');
-            },
-            error: function(xhr, errmsg, err){
-                alert("Wystąpił błąd: " + errmsg);
-            }
-        });
-    });
-
-    // Initialize quantity options when page loads
-    document.addEventListener("DOMContentLoaded", function() {
-        updateQuantityOptions();
-    });
+    var CSRFMIDDLEWARETOKEN = "{{ csrf_token }}";
+    var URL_ADD = "{% url "cart-add" %}";
+    var product = {{product.price}}
 </script>
+<!-- include your js files -->
+<script src="{% static 'js/product-info.js' %}"></script>
+
 
 {% endblock %}
