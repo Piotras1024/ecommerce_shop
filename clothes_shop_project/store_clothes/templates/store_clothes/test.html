@@ -1,0 +1,100 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+
+    <main class="pt-5">
+
+        <div class="row g-3">
+
+            <div class="col-md-5 col-lg-5 order-md-first bg-light">
+                <img class="img-fluid mx-auto d-block" alt="Responsive image" src="{{ product.image.url }}">
+            </div>
+
+            <div class="col-md-7 col-lg-7 ps-md-3 ps-lg-5">
+                <h1 class="mb-0 h4">{{ product.title }}</h1>
+                <h2 class="mb-0 h4">{{ product.category }}</h2>
+                <strong>{{ product.brand }}</strong>
+                <hr>
+                <br>
+                <p>{{ product.description }}</p>
+                <div class="border">
+                    <div class="col border-bottom">
+                        <div class="row p-3">
+                            <div class="col-6">Cena</div>
+                            <div class="col-6 text-end" id="cena_produktow"><span class="h4 fw-bold">{{ product.price }} zł</span></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row p-3">
+                            <div class="col-6">
+                                <label for="size-select">Rozmiar:</label>
+                                {% if sizes_availability %}
+                                    <select id="size-select" onchange="updateQuantityOptions()">
+                                        {% for size, availability in sizes_availability %}
+                                            <option value="{{ size }}" data-availability="{{ availability }}"
+                                                {% if selected_size_id and size == selected_size_id %}
+                                                    selected
+                                                {% endif %}>
+                                                {{ size }} - dostępne {{ availability }} szt.
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                {% else %}
+                                    <p>Niedostępne</p>
+                                {% endif %}
+                            </div>
+                            <div class="col-6">
+                                <label id="quantity-label" for="quantity-select">Ilość:</label>
+                                <select id="quantity-select">
+                                    <!-- Opcje ilości będą wstawiane dynamicznie przez JavaScript -->
+                                </select>
+                            </div>
+                            <div class="col-6 text-end">
+                                <button type="button" id="add-button" value="{{ product.id }}" class="btn btn-secondary btn-sm">
+                                    Dodaj do koszyka
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+</div>
+
+<script>
+    var CSRFMIDDLEWARETOKEN = "{{ csrf_token }}";
+    var URL_ADD = "{% url 'cart-add' %}";
+    var product = {{ product.price }};
+    var selectedQuantity = {{ selected_quantity|default:'null' }};
+
+    function updateQuantityOptions() {
+        var sizeSelect = document.getElementById('size-select');
+        var quantitySelect = document.getElementById('quantity-select');
+        var availability = sizeSelect.options[sizeSelect.selectedIndex].getAttribute('data-availability');
+
+        quantitySelect.innerHTML = '';
+        for (var i = 1; i <= availability; i++) {
+            var option = document.createElement('option');
+            option.value = i;
+            option.text = i;
+            if (selectedQuantity && i == selectedQuantity) {
+                option.selected = true;
+            }
+            quantitySelect.appendChild(option);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        updateQuantityOptions();
+    });
+</script>
+<!-- include your js files -->
+<script src="{% static 'js/product-info.js' %}"></script>
+
+{% endblock %}

@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
 
 from .cart import Cart
-from store_clothes.models import Product, ProductSize
+from store_clothes.models import Product, ProductSize, Size
 
 
 # Create your views here.
@@ -19,17 +19,21 @@ def cart_summary(request):
 def cart_add(request):
 
     cart = Cart(request)
+
     if request.POST.get('action') == 'post':
         product_id = int(request.POST.get('product_id'))
         product_quantity = int(request.POST.get('product_quantity'))
+        size_name = request.POST.get('product_size')
 
         product = get_object_or_404(Product, id=product_id)
+        size = get_object_or_404(Size, size_name=size_name)
 
-        cart.add(product=product, product_qty=product_quantity)
+        cart.add(product=product, product_qty=product_quantity, size=size)
 
         cart_quantity = cart.__len__()
+        product_size_quantity = cart.cart[str(product_id)][str(size.id)]['qty']
 
-        response = JsonResponse({'qty': cart_quantity})
+        response = JsonResponse({'cart_qty': cart_quantity, 'product_size_qty': product_size_quantity})
 
         return response
 
