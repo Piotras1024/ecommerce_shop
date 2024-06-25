@@ -40,9 +40,9 @@
                     <div class="col">
                         <div class="row p-3">
                             <div class="col-12">
-                              <label for="size-select">Rozmiar</label>
+                              <label for="size-select{{item.product.id}}">Rozmiar</label>
                                &nbsp;
-                              <select id="size-select{{product.id}}" onchange="updateQuantityOptions({{product.id}})">
+                              <select id="size-select{{item.product.id}}" onchange="updateQuantityOptions({{item.product.id}})">
                                         {% for size in item.product.product_sizes.all %}
                                             <option value="{{ size.size.size_name }}" data-availability="{{ size.availability }}">
                                               {{ size.size.size_name }}
@@ -50,15 +50,15 @@
                                         {% endfor %}
                               </select>
                                 <br> <br>
-                              <label id="qty-label{{product.id}}" for="select{{product.id}}">Qty</label>
+                              <label id="qty-label{{item.product.id}}" for="select{{item.product.id}}">Qty</label>
                               &nbsp;
-                              <select id="select{{product.id}}">
+                              <select id="select{{item.product.id}}">
                                  <!-- Opcje ilości będą wypełniane dynamicznie przez JavaScript -->
                               </select>
 
-                                <button type="button" data-index="{{product.id}}" class="btn btn-primary btn-sm update-button">Update</button>
+                                <button type="button" data-index="{{item.product.id}}" class="btn btn-primary btn-sm update-button">Update</button>
                                 &nbsp;
-                                <button type="button" data-index="{{product.id}}" class="btn btn-danger btn-sm delete-button">Delete</button>
+                                <button type="button" data-index="{{item.product.id}}" class="btn btn-danger btn-sm delete-button">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -81,23 +81,26 @@
 </main>
 
 <script>
-    // Function to show Bootstrap alert
-    function showAlert(message, alertType) {
-        var alertHtml = `<div class="alert ${alertType} alert-dismissible fade show" role="alert">
-                            ${message}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>`;
-        $('#notification-container').html(alertHtml);
-    }
+  // Function to show Bootstrap alert
+function showAlert(message, alertType) {
+    var alertHtml = `<div class="alert ${alertType} alert-dismissible fade show" role="alert">
+                        ${message}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
+    $('#notification-container').html(alertHtml);
+}
 
-    // Function to update quantity options based on selected size
-    function updateQuantityOptions(productId) {
-        var sizeSelect = document.getElementById('size-select' + productId);
-        var qtySelect = document.getElementById('select' + productId);
-        var qtyLabel = document.querySelector('label[for="select' + productId + '"]');
-        var selectedOption = sizeSelect.options[sizeSelect.selectedIndex];
-        var availability = parseInt(selectedOption.getAttribute('data-availability'), 10);
+// Function to update quantity options based on selected size
+function updateQuantityOptions(productId) {
+    var sizeSelect = document.getElementById('size-select' + productId);
+    var qtySelect = document.getElementById('select' + productId);
+    var qtyLabel = document.querySelector('label[for="select' + productId + '"]');
+    var selectedOption = sizeSelect.options[sizeSelect.selectedIndex];
+    var availability = parseInt(selectedOption.getAttribute('data-availability'), 10);
 
+    console.log('availability: ', availability)
+
+    if (qtySelect && qtyLabel && selectedOption) {
         qtySelect.innerHTML = '';
         if (availability === 0) {
             qtySelect.style.display = 'none';
@@ -113,62 +116,68 @@
             }
         }
     }
+}
 
-    // Delete button
-    $(document).on('click', '.delete-button', function(e){
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: '{% url "cart-delete" %}',
-            data: {
-                product_id: $(this).data('index'),
-                csrfmiddlewaretoken: "{{csrf_token}}",
-                action: 'post'
-            },
-            success: function(json){
-                location.reload(true);
-                document.getElementById("cart-qty").textContent = json.qty;
-                document.getElementById("total").textContent = json.total;
-            },
-            error: function(xhr, errmsg, err){
-                // Error handling
-            }
-        });
+// Delete button
+$(document).on('click', '.delete-button', function(e){
+    e.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: '{% url "cart-delete" %}',
+        data: {
+            product_id: $(this).data('index'),
+            csrfmiddlewaretoken: "{{csrf_token}}",
+            action: 'post'
+        },
+        success: function(json){
+            location.reload(true);
+            document.getElementById("cart-qty").textContent = json.qty;
+            document.getElementById("total").textContent = json.total;
+        },
+        error: function(xhr, errmsg, err){
+            // Error handling
+        }
     });
+});
 
-    // Update button
-    $(document).on('click', '.update-button', function(e){
-        e.preventDefault();
+// Update button
+$(document).on('click', '.update-button', function(e){
+    e.preventDefault();
 
-        var theproductid = $(this).data('index');
+    var theproductid = $(this).data('index');
 
-        $.ajax({
-            type: 'POST',
-            url: '{% url "cart-update" %}',
-            data: {
-                product_id: $(this).data('index'),
-                product_quantity: $('#select' + theproductid + ' option:selected').text(),
-                size_name: $('#size-select' + theproductid + ' option:selected').val(),
-                csrfmiddlewaretoken: "{{csrf_token}}",
-                action: 'post'
-            },
-            success: function(json){
-                $('#cart-qty').text(json.qty);
-                $('#total').text(json.total);
-                $('#product-total-' + theproductid).text('zł ' + (json.product_total || ''));
-            },
-            error: function(xhr, errmsg, err){
-                if (xhr.responseJSON && xhr.responseJSON.error) {
-                    showAlert(xhr.responseJSON.error, 'alert-danger');
-                }
+    $.ajax({
+        type: 'POST',
+        url: '{% url "cart-update" %}',
+        data: {
+            product_id: $(this).data('index'),
+            product_quantity: $('#select' + theproductid + ' option:selected').text(),
+            size_name: $('#size-select' + theproductid + ' option:selected').val(),
+            csrfmiddlewaretoken: "{{csrf_token}}",
+            action: 'post'
+        },
+        success: function(json){
+            $('#cart-qty').text(json.qty);
+            $('#total').text(json.total);
+            $('#product-total-' + theproductid).text('zł ' + (json.product_total || ''));
+        },
+        error: function(xhr, errmsg, err){
+            if (xhr.responseJSON && xhr.responseJSON.error) {
+                showAlert(xhr.responseJSON.error, 'alert-danger');
             }
-        });
+        }
     });
+});
 
-    // Wywołaj updateQuantityOptions dla każdego produktu na starcie
+// Initialize quantity options for each product on page load
+document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('select[id^="size-select"]').forEach(function(select) {
         updateQuantityOptions(select.id.replace('size-select', ''));
     });
+});
+
+
+
 </script>
 
 

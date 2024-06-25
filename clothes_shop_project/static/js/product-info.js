@@ -6,6 +6,8 @@
         var maxQuantity = parseInt(selectedSize.getAttribute('data-availability'), 10);
         var cena_produktow= document.getElementById('cena_produktow');
 
+        console.log('maxQuantity: ', maxQuantity);
+
         quantitySelect.innerHTML = '';
         if (maxQuantity === 0) {
             quantitySelect.style.display = 'none';

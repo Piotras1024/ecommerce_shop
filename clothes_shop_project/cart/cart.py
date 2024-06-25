@@ -68,8 +68,11 @@ class Cart:
         self.session.modified = True
 
     def __len__(self):
-
-        return sum(item['qty'] for item in self.cart.values())
+        total_qty = 0
+        for product_id, sizes in self.cart.items():
+            for size_id, details in sizes.items():
+                total_qty += details['qty']
+        return total_qty
 
     def __iter__(self):
         all_product_ids = self.cart.keys()
