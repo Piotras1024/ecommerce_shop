@@ -4,7 +4,7 @@ from itertools import product
 from store_clothes.models import Product, ProductSize
 
 
-class Cart():
+class Cart:
 
     def __init__(self, request):
 
@@ -81,16 +81,17 @@ class Cart():
         for product in products:
             product_id = str(product.id)
             if product_id in self.cart:
-                # Tworzenie wpisu dla każdego produktu, jeśli jeszcze nie istnieje
-                cart_copy[product_id] = cart_copy.get(product_id, {})
-                # Dodawanie informacji o każdym rozmiarze produktu
-                for size_id, details in self.cart[product_id].items():
-                    # Dodawanie lub aktualizowanie informacji o rozmiarze
-                    cart_copy[product_id][size_id] = {
-                        **details,
-                        'product': product,
-                        'size': size_id  # Przechowujemy size_id dla wyraźności
-                    }
+                if isinstance(size_item, dict):  # Upewnij się, że size_item jest słownikiem
+                    # Tworzenie wpisu dla każdego produktu, jeśli jeszcze nie istnieje
+                    cart_copy[product_id] = cart_copy.get(product_id, {})
+                    # Dodawanie informacji o każdym rozmiarze produktu
+                    for size_id, details in self.cart[product_id].items():
+                        # Dodawanie lub aktualizowanie informacji o rozmiarze
+                        cart_copy[product_id][size_id] = {
+                            **details,
+                            'product': product,
+                            'size': size_id  # Przechowujemy size_id dla wyraźności
+                        }
 
         # Yieldowanie produktów z informacjami o rozmiarze
         for product_items in cart_copy.values():
