@@ -30,7 +30,7 @@
         var selectedQuantity = parseInt(quantitySelect.value, 10);
         var product_price = product
         var totalPrice = selectedQuantity * product;
-        cena_produktow.textContent = totalPrice.toFixed(2); // Formatuj cenę do dwóch miejsc po przecinku
+        cena_produktow.textContent = totalPrice.toFixed(2) + ' zł'; // Formatuj cenę do dwóch miejsc po przecinku
     }
 
     // Dodaj listener, aby aktualizować cenę przy zmianie ilości

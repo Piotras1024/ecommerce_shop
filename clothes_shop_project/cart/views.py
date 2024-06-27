@@ -45,8 +45,9 @@ def cart_delete(request):
     if request.POST.get('action') == 'post':
 
         product_id = int(request.POST.get('product_id'))
+        size_id = str(request.POST.get('size_id'))
 
-        cart.delete(product=product_id)
+        cart.delete(product_id=product_id, size_id=size_id)
 
         cart_quantity = cart.__len__()
 
@@ -70,8 +71,13 @@ def cart_update(request):
 
         # Pobranie produktu na podstawie ID
         product = Product.objects.get(id=product_id)
+
+        # pobranie rozmiaru na podstawie nazwy
+        size = Size.objects.get(size_name=size_name)
+
         # Pobrać rozmiary powiązane z danym produktem
         product_sizes = ProductSize.objects.filter(product=product).select_related('size')
+
         # Tworzenie słownika dostępności dla rozmiarów powiązanych z produktem
         sizes_availability = {ps.size.size_name: ps.availability for ps in product_sizes}
 
@@ -80,9 +86,10 @@ def cart_update(request):
                 'error': f'Produkt {product.title} jest dostępny tylko w ilości {sizes_availability[size_name]}'
             }, status=400)
         else:
-            cart.update(product=product_id, qty=product_quantity)
+            cart.update(product=product, product_qty=product_quantity, size=size)
 
         cart_quantity = cart.__len__()
         cart_total = cart.get_total()
+        singe_total = cart.get_single_total(product_id)
 
-        return JsonResponse({'qty': cart_quantity, 'total': cart_total, 'sizes': sizes_availability})
+        return JsonResponse({'qty': cart_quantity, 'total': cart_total, 'product_total': singe_total, 'sizes': sizes_availability})

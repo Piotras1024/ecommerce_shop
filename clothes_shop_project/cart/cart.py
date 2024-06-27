@@ -39,12 +39,15 @@ class Cart:
 
         self.session.modified = True
 
-    def delete(self, product):
-
-        product_id = str(product)
+    def delete(self, product_id, size_id):
 
         if product_id in self.cart:
-            del self.cart[product_id]
+            if size_id in self.cart[product_id]:
+                del self.cart[product_id][size_id]
+
+                # Jeśli po usunięciu rozmiaru, produkt nie ma więcej rozmiarów w koszyku, usuń również produkt
+                if not self.cart[product_id]:
+                    del self.cart[product_id]
 
         self.session.modified = True
 
@@ -100,4 +103,12 @@ class Cart:
         total = Decimal('0.00')
         for item in self:
             total += item['total']
+        return total
+
+    def get_single_total(self, product_id):
+        total = Decimal('0.00')
+        product_id = str(product_id)
+        if product_id in self.cart:
+            for size_id, details in self.cart[product_id].items():
+                total += Decimal(details['price']) * details['qty']
         return total
