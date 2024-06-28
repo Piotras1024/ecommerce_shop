@@ -50,13 +50,13 @@ def cart_add(request):
 def cart_delete(request):
 
     cart = Cart(request)
-
+    logger.info(f'productsize_id: {request.POST.get("productsize_id")}')
     if request.POST.get('action') == 'post':
 
-        product_id = int(request.POST.get('product_id'))
-        size_id = str(request.POST.get('size_id'))
+        productsize_id = request.POST.get('productsize_id')
 
-        cart.delete(product_id=product_id, size_id=size_id)
+
+        cart.delete(productsize_id)
 
         cart_quantity = cart.__len__()
 

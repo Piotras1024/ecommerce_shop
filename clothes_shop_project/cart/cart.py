@@ -32,16 +32,10 @@ class Cart:
 
         logger.info(f'Added product {self.cart}')
 
+    def delete(self, productsize_id):
 
-    def delete(self, product_id, size_id):
-
-        if product_id in self.cart:
-            if size_id in self.cart[product_id]:
-                del self.cart[product_id][size_id]
-
-                # Jeśli po usunięciu rozmiaru, produkt nie ma więcej rozmiarów w koszyku, usuń również produkt
-                if not self.cart[product_id]:
-                    del self.cart[product_id]
+        if productsize_id in self.cart:
+            del self.cart[productsize_id]
 
         self.session.modified = True
 
@@ -52,7 +46,6 @@ class Cart:
         self.session.modified = True
 
         logger.info(f'Updated {self.cart}')
-
 
     def __len__(self):
         total_qty = 0
@@ -71,32 +64,6 @@ class Cart:
             logger.info(f'product_item: {result}')
             yield result
 
-
-
-
-
-
-    # def __iter__(self):
-    #     all_product_ids = self.cart.keys()
-    #     products = Product.objects.filter(id__in=all_product_ids)
-    #     cart_copy = self.cart.copy()
-    #
-    #     for product in products:
-    #         product_id = str(product.id)
-    #         for size_id, details in cart_copy[product_id].items():
-    #             try:
-    #                 # Ensure size_id is a number before attempting to get the Size object
-    #                 size_id_int = int(size_id)
-    #                 size = Size.objects.get(id=size_id_int)
-    #             except (ValueError, Size.DoesNotExist):
-    #                 continue  # or handle the error appropriately
-    #             item = {
-    #                 'product': product,
-    #                 'size': size,
-    #                 **details,
-    #                 'total': Decimal(details['price']) * details['qty']
-    #             }
-    #             yield item
 
     def get_total(self):
         total = Decimal('0.00')

@@ -34,7 +34,7 @@ def payment_success(request):
 
     for key in list(request.session.keys()):
 
-        if key == 'session_key':
+        if key == 'cart':
 
             del request.session[key]
 

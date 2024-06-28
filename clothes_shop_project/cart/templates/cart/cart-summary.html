@@ -71,7 +71,7 @@
 
                                 <button type="button" data-index="{{item.product_size_object.id}}" class="btn btn-primary btn-sm update-button">Update</button>
                                 &nbsp;
-                                <button type="button" data-index="{{item.product_size_object.id}}" data-size="{{item.product_size_object.size}}" class="btn btn-danger btn-sm delete-button">Delete</button>
+                                <button type="button" data-index="{{item.product_size_object.id}}" class="btn btn-danger btn-sm delete-button">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -111,8 +111,7 @@ $(document).on('click', '.delete-button', function(e){
         type: 'POST',
         url: '{% url "cart-delete" %}',
         data: {
-            product_id: $(this).data('index'),
-            size_id: $(this).data('size'),
+            productsize_id: $(this).data('index'),
             csrfmiddlewaretoken: "{{csrf_token}}",
             action: 'post'
         },
