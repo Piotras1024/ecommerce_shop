@@ -35,16 +35,12 @@ def list_category(request, category_slug=None):
 def product_info(request, product_slug):
     product = get_object_or_404(Product, slug=product_slug)
     product_sizes = ProductSize.objects.filter(product=product).select_related('size')
-    sizes_availability = [(ps.size.size_name, ps.availability) for ps in product_sizes]
-
-    # Dodajemy informację, czy są dostępne jakiekolwiek rozmiary
-    any_available = any(availability > 0 for _, availability in sizes_availability)
 
     context = {
         'product': product,
-        'sizes_availability': sizes_availability,
-        'any_available': any_available
+        'product_sizes': product_sizes
     }
 
     return render(request, 'store_clothes/product-info.html', context=context)
+
 

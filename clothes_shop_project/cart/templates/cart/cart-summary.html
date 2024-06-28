@@ -2,7 +2,6 @@
 
 {% load mathfilters %}
 {% load static %}
-{% load custom_filters %}
 
 {% block content %}
 
@@ -15,25 +14,25 @@
         <div id="notification-container"></div> <!-- zmiana -->
 
         <!-- loop -->
-        {% for product_id, cart_item in cart_items_with_sizes.items %}
+        {% for item in cart %}
         <br>
         <div class="row mb-4 border product-item">
             <div class="col-md-3 col-lg-2 order-md-first bg-light">
-                <img class="img-fluid mx-auto d-block" width="200px" alt="Responsive image" src="{{ cart_item.item.product.image.url }}">
+                <img class="img-fluid mx-auto d-block" width="200px" alt="Responsive image" src="{{item.product_size_object.product.image.url}}">
                 <!-- Product image, why .url ? -->
             </div>
             <div class="col-md-9 col-lg-10 ps-md-3 ps-lg-10">
-                <a href="{{ cart_item.item.product.get_absolute_url }}" class="text-info text-decoration-none">
+                <a href="{{item.product_size_object.product.get_absolute_url}}" class="text-info text-decoration-none">
                     <!-- Product get absolute url -->
-                    <h1 class="h5 pt-2"> {{ cart_item.item.product.title }}  <!-- Product title --> </h1>
+                    <h1 class="h5 pt-2"> {{item.product_size_object.product.title}}  <!-- Product title --> </h1>
                 </a>
                 <div class="border">
                     <div class="col border-bottom">
                         <div class="row p-3">
-                            <div class="col-6"> Cena {{ cart_item.item.product.price }} zł</div>
+                            <div class="col-6"> Cena </div>
                             <div class="col-6 text-end">
-                                <span class="h6 fw-bold" id="product-total-{{ cart_item.item.product.id }}">
-                                    {{ cart_item.item.total|floatformat:2 }} zł <!-- Product price -->
+                                <span class="h6 fw-bold" id="product-total-{{item.product_size_object.id}}">
+                                    {{item.product_size_object.product.price|mul:item.qty|floatformat:2 }} zł <!-- Product price -->
                                 </span>
                             </div>
                         </div>
@@ -41,30 +40,38 @@
                     <div class="col">
                         <div class="row p-3">
                             <div class="col-12">
-
-                                <label>Rozmiar &nbsp '{{ cart_item.item.size }}',
-                                dlaczego ? {{ cart_item.sizes_availability|get_item:cart_item.item.size }}
-
-                                nie pokazujesz sie
-
-
-                               </label>
-
+                                <label>Rozmiar &nbsp {{item.product_size_object.size}}</label>
+                                &nbsp;
 
                                 <br><br>
 
-                                    <div class="cart-item">
-                                        <label for="quantity-select{{ cart_item.item.product.id }}">Qty &nbsp</label>
-                                        &nbsp;&nbsp;
-                                        <select id="quantity-select{{ cart_item.item.product.id }}">
 
-                                        </select>
-                                    </div>
-                                <br>
-
-                                <button type="button" data-index="{{ cart_item.item.product.id }}" class="btn btn-primary btn-sm update-button">Update</button>
+                                <label id="qty-label{{item.product_size_object.id}}" for="qty-select{{item.product_size_object.id}}">Qty</label>
                                 &nbsp;
-                                <button type="button" data-index="{{ cart_item.item.product.id }}" data-size="{{ cart_item.item.size.size_name }}" class="btn btn-danger btn-sm delete-button">Delete</button>
+<!--                                <select id="select{{item.product_size_object.id}}">-->
+<!--                                    // js robi select z wyborem ilosci-->
+<!--                                </select>-->
+<!--                                onchange="updateQuantityOptions({{item.product.id}}, {{item.qty}})"-->
+                                <select id="qty-select{{item.product_size_object.id}}" >
+                                     {% for qty in item.qtys %}
+                                        {% if qty == item.qty %}
+                                            <option selected value="{{ qty }}" data-availability="{{ item.product_size_object.availability }}">
+                                                {{ qty }}
+                                            </option>
+                                        {% else %}
+                                            <option value="{{ qty }}" data-availability="{{ item.product_size_object.availability }}">
+                                                {{ qty }}
+                                            </option>
+                                        {% endif %}
+
+                                    {% endfor %}
+
+                                </select>
+
+
+                                <button type="button" data-index="{{item.product_size_object.id}}" class="btn btn-primary btn-sm update-button">Update</button>
+                                &nbsp;
+                                <button type="button" data-index="{{item.product_size_object.id}}" data-size="{{item.product_size_object.size}}" class="btn btn-danger btn-sm delete-button">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -75,7 +82,7 @@
         <!-- end loop -->
 
         <div class="col-12 text-end">
-            <div class="h6 fw-bold"> Sub total: <div id="total" class="d-inline-flex"> {{ cart.get_total }} zł <!-- cart.get_total --> </div></div>
+            <div class="h6 fw-bold"> Sub total: <div id="total" class="d-inline-flex"> {{cart.get_total}} zł <!-- cart.get_total --> </div></div>
         </div>
         <br>
         <div class="col-12 text-end mt-3">
@@ -87,10 +94,83 @@
 </main>
 
 <script>
-    var CSRFMIDDLEWARETOKEN = "{{ csrf_token }}";
-    var URL_DELETE = '{% url "cart-delete" %}';
+  // Function to show Bootstrap alert
+function showAlert(message, alertType) {
+    var alertHtml = `<div class="alert ${alertType} alert-dismissible fade show" role="alert">
+                        ${message}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
+    $('#notification-container').html(alertHtml);
+}
+
+
+// Delete button
+$(document).on('click', '.delete-button', function(e){
+    e.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: '{% url "cart-delete" %}',
+        data: {
+            product_id: $(this).data('index'),
+            size_id: $(this).data('size'),
+            csrfmiddlewaretoken: "{{csrf_token}}",
+            action: 'post'
+        },
+        success: function(json){
+            location.reload(true);
+            $('#cart-qty').text(json.qty);
+            $('#total').text(json.total);
+            var single_price = document.getElementById("product-total-" + theproductid);
+            single_price.textContent = 'zł ' + (json.product_total || '');
+
+        },
+        error: function(xhr, errmsg, err){
+            // Error handling
+        }
+    });
+});
+
+// Update button
+$(document).on('click', '.update-button', function(e){
+    e.preventDefault();
+
+    var theproductid = $(this).data('index');
+
+    $.ajax({
+        type: 'POST',
+        url: '{% url "cart-update" %}',
+        data: {
+            productsize_id: $(this).data('index'),
+            product_qty: $('#qty-select' + theproductid + ' option:selected').val(),
+            csrfmiddlewaretoken: "{{csrf_token}}",
+            action: 'post'
+        },
+        success: function(json){
+            $('#cart-qty').text(json.qty);
+            $('#total').text(json.total + ' zł');
+            $('#product-total-' + theproductid).text(json.product_total + ' zł');
+
+        },
+        error: function(xhr, errmsg, err){
+            if (xhr.responseJSON && xhr.responseJSON.error) {
+                showAlert(xhr.responseJSON.error, 'alert-danger');
+            }
+        }
+    });
+});
+
+// Initialize quantity options for each product on page load
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('select[id^="size-select"]').forEach(function(select) {
+        updateQuantityOptions(select.id.replace('size-select', ''));
+    });
+});
+
+
+
 </script>
 
-<script src="{% static 'js/cart_summary.js' %}"></script>
+
+
 
 {% endblock %}

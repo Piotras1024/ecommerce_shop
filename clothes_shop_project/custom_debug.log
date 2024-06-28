@@ -1,0 +1,556 @@
+INFO 2024-06-28 18:22:35,841 cart Added product
+INFO 2024-06-28 18:24:33,657 cart Added product {'1': 1, '4': 1}
+INFO 2024-06-28 18:30:35,641 views cart_summary: {cart}
+INFO 2024-06-28 18:31:24,893 views cart_summary: {cart}
+INFO 2024-06-28 18:32:23,017 views cart_summary: {cart}
+INFO 2024-06-28 19:04:15,688 views cart_summary: {cart}
+INFO 2024-06-28 19:04:59,780 views cart_summary: {cart}
+INFO 2024-06-28 19:05:25,623 views cart_summary: {cart}
+INFO 2024-06-28 19:06:44,288 views cart_summary: {cart}
+INFO 2024-06-28 19:06:49,510 cart Added product {'34': 1}
+INFO 2024-06-28 19:06:51,500 views cart_summary: {cart}
+INFO 2024-06-28 19:06:51,504 cart product_item: {'product_size_object': <QuerySet [<ProductSize: Suknia_05 - XXL>]>, 'qty': 1}
+INFO 2024-06-28 19:06:51,505 cart product_item: {'product_size_object': <QuerySet [<ProductSize: Suknia_05 - XXL>]>, 'qty': 1}
+INFO 2024-06-28 19:07:36,015 views cart_summary: {cart}
+INFO 2024-06-28 19:07:36,033 cart product_item: {'product_size_object': <QuerySet [<ProductSize: Suknia_05 - XXL>]>, 'qty': 1}
+INFO 2024-06-28 19:07:50,421 cart Added product {'34': 1}
+INFO 2024-06-28 19:07:52,411 views cart_summary: {cart}
+INFO 2024-06-28 19:07:52,413 cart product_item: {'product_size_object': <QuerySet [<ProductSize: Suknia_05 - XXL>]>, 'qty': 1}
+INFO 2024-06-28 19:08:23,562 views cart_summary: {cart}
+INFO 2024-06-28 19:08:23,584 cart product_item: {'product_size_object': <QuerySet [<ProductSize: Suknia_05 - XXL>]>, 'qty': 1}
+INFO 2024-06-28 19:11:54,744 views cart_summary: {cart}
+INFO 2024-06-28 19:11:54,761 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:37,886 views cart_summary: {cart}
+INFO 2024-06-28 19:12:37,888 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:38,563 views cart_summary: {cart}
+INFO 2024-06-28 19:12:38,565 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:38,708 views cart_summary: {cart}
+INFO 2024-06-28 19:12:38,711 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:39,174 views cart_summary: {cart}
+INFO 2024-06-28 19:12:39,177 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:39,349 views cart_summary: {cart}
+INFO 2024-06-28 19:12:39,351 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:54,247 views cart_summary: {cart}
+INFO 2024-06-28 19:12:54,253 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:55,026 views cart_summary: {cart}
+INFO 2024-06-28 19:12:55,028 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:12:55,185 views cart_summary: {cart}
+INFO 2024-06-28 19:12:55,188 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:14:49,176 views cart_summary: {cart}
+INFO 2024-06-28 19:14:49,195 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:17:37,299 views cart_summary: {cart}
+INFO 2024-06-28 19:17:37,316 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:20:14,727 views cart_summary: {cart}
+INFO 2024-06-28 19:20:14,732 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:30:30,422 views cart_summary: {cart}
+INFO 2024-06-28 19:30:30,426 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:30:56,261 views cart_summary: {cart}
+INFO 2024-06-28 19:30:56,263 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:31:07,893 views cart_summary: {cart}
+INFO 2024-06-28 19:31:07,896 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:31:08,068 views cart_summary: {cart}
+INFO 2024-06-28 19:31:08,071 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1}
+INFO 2024-06-28 19:54:54,813 views cart_summary: {cart}
+INFO 2024-06-28 19:59:17,723 views cart_summary: {cart}
+INFO 2024-06-28 19:59:18,613 views cart_summary: {cart}
+INFO 2024-06-28 19:59:56,731 views cart_summary: {cart}
+INFO 2024-06-28 19:59:56,749 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:03:05,245 views cart_summary: {cart}
+INFO 2024-06-28 20:03:05,255 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:03:14,973 views cart_summary: {cart}
+INFO 2024-06-28 20:03:14,975 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:03:16,615 views cart_summary: {cart}
+INFO 2024-06-28 20:03:16,619 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:08:07,268 views cart_summary: {cart}
+INFO 2024-06-28 20:08:07,273 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:08:08,289 views cart_summary: {cart}
+INFO 2024-06-28 20:08:08,293 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:12:17,322 views cart_summary: {cart}
+INFO 2024-06-28 20:12:17,328 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:16:35,365 views cart_summary: {cart}
+INFO 2024-06-28 20:16:35,369 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:22:57,518 views cart_summary: {cart}
+INFO 2024-06-28 20:22:57,545 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:23:59,362 views cart_summary: {cart}
+INFO 2024-06-28 20:23:59,369 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:28:56,588 views cart_summary: {cart}
+INFO 2024-06-28 20:28:56,608 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:29:49,190 views 
+INFO 2024-06-28 20:30:12,580 views 
+INFO 2024-06-28 20:30:12,580 cart Updated {'34': 1, 34: ''}
+INFO 2024-06-28 20:33:28,635 views cart_summary: {cart}
+INFO 2024-06-28 20:33:28,649 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:34:43,671 views cart_summary: {cart}
+INFO 2024-06-28 20:34:43,676 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:36:08,873 views cart_summary: {cart}
+INFO 2024-06-28 20:36:08,879 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:36:47,723 views cart_summary: {cart}
+INFO 2024-06-28 20:36:47,740 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:37:13,275 views cart_summary: {cart}
+INFO 2024-06-28 20:37:13,278 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:37:51,222 cart Added product {'34': 1, '5': 1}
+INFO 2024-06-28 20:38:08,835 views cart_summary: {cart}
+INFO 2024-06-28 20:38:08,839 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:38:08,841 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:43:33,701 views cart_summary: {cart}
+INFO 2024-06-28 20:43:33,708 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:43:33,710 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:44:09,366 views cart_summary: {cart}
+INFO 2024-06-28 20:44:09,370 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:44:09,372 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:44:23,382 views cart_summary: {cart}
+INFO 2024-06-28 20:44:23,387 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:44:23,390 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:44:24,232 views cart_summary: {cart}
+INFO 2024-06-28 20:44:24,235 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:44:24,237 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:45:05,488 views cart_summary: {cart}
+INFO 2024-06-28 20:45:05,493 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:45:05,494 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:47:06,298 views cart_summary: {cart}
+INFO 2024-06-28 20:47:06,302 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:47:06,303 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:48:48,707 views cart_summary: {cart}
+INFO 2024-06-28 20:48:48,721 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:48:48,722 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:48:50,937 cart Updated {'34': 1, '5': 1, 34: 2}
+INFO 2024-06-28 20:48:54,841 cart Updated {'34': 2, '5': 1, 34: 3}
+INFO 2024-06-28 20:48:57,371 cart Updated {'34': 3, '5': 1, 34: 1}
+INFO 2024-06-28 20:49:20,345 cart Updated {'34': 1, '5': 1, 34: 2}
+INFO 2024-06-28 20:51:32,827 views cart_summary: {cart}
+INFO 2024-06-28 20:51:32,834 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:32,835 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:38,027 views cart_summary: {cart}
+INFO 2024-06-28 20:51:38,030 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:38,033 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:38,335 views cart_summary: {cart}
+INFO 2024-06-28 20:51:38,337 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:38,338 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:38,727 views cart_summary: {cart}
+INFO 2024-06-28 20:51:38,729 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:38,731 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:51:54,880 cart Updated {'34': 2, '5': 1, 34: 3}
+INFO 2024-06-28 20:53:16,713 cart Updated {'34': 3, '5': 1, 34: 1}
+INFO 2024-06-28 20:53:27,102 cart Added product {'34': 1, '5': 1, '6': 3}
+INFO 2024-06-28 20:53:30,472 views cart_summary: {cart}
+INFO 2024-06-28 20:53:30,476 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:53:30,478 cart product_item: {'product_size_object': <ProductSize: dres_01 - S>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:53:30,480 cart product_item: {'product_size_object': <ProductSize: dres_01 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:55:14,251 views cart_summary: {cart}
+INFO 2024-06-28 20:55:15,978 views cart_summary: {cart}
+INFO 2024-06-28 20:55:27,934 cart Added product {6: 3}
+INFO 2024-06-28 20:55:33,473 views cart_summary: {cart}
+INFO 2024-06-28 20:55:33,476 cart product_item: {'product_size_object': <ProductSize: dres_01 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:55:50,469 cart Updated {'6': 3, 6: 1}
+INFO 2024-06-28 20:56:13,693 cart Updated {'6': 1, 6: 2}
+INFO 2024-06-28 20:56:45,661 views cart_summary: {cart}
+INFO 2024-06-28 20:56:49,930 views cart_summary: {cart}
+INFO 2024-06-28 20:56:58,093 cart Added product {4: 2}
+INFO 2024-06-28 20:57:10,185 views cart_summary: {cart}
+INFO 2024-06-28 20:57:10,187 cart product_item: {'product_size_object': <ProductSize: dres_01 - XS>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 20:57:39,173 cart Added product {'4': 2, 34: 3}
+INFO 2024-06-28 21:00:17,851 views cart_summary: {cart}
+INFO 2024-06-28 21:00:25,179 cart Added product {'3': 2}
+INFO 2024-06-28 21:00:36,391 views cart_summary: {cart}
+INFO 2024-06-28 21:00:36,394 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:00:42,890 cart Updated {'3': 1}
+INFO 2024-06-28 21:00:52,434 cart Updated {'3': 3}
+INFO 2024-06-28 21:01:05,611 cart Added product {'3': 3, '34': 3}
+INFO 2024-06-28 21:01:14,342 views cart_summary: {cart}
+INFO 2024-06-28 21:01:14,344 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:01:14,346 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:01:20,484 cart Updated {'3': 3, '34': 1}
+INFO 2024-06-28 21:03:18,905 views cart_summary: {cart}
+INFO 2024-06-28 21:03:18,922 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:03:18,924 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:03:48,893 views cart_summary: {cart}
+INFO 2024-06-28 21:03:48,912 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:03:48,914 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:03:48,915 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:04:24,332 views cart_summary: {cart}
+INFO 2024-06-28 21:04:24,349 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:04:24,351 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:04:24,353 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:20,525 views cart_summary: {cart}
+INFO 2024-06-28 21:05:20,545 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:20,547 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:20,549 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:22,216 views cart_summary: {cart}
+INFO 2024-06-28 21:05:22,219 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:22,220 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:22,222 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:54,237 views cart_summary: {cart}
+INFO 2024-06-28 21:05:54,255 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:54,257 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:54,258 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:05:54,258 cart item = {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:06:43,698 views cart_summary: {cart}
+INFO 2024-06-28 21:06:43,717 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:06:43,719 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:06:43,720 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:06:43,720 cart item = {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:06:43,721 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:06:43,721 cart item = {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:08:14,872 views cart_summary: {cart}
+INFO 2024-06-28 21:08:14,890 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:08:14,892 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:08:14,893 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:08:48,259 views cart_summary: {cart}
+INFO 2024-06-28 21:08:48,278 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:08:48,280 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:08:48,282 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:09:12,859 views cart_summary: {cart}
+INFO 2024-06-28 21:09:12,878 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:09:12,879 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:09:12,881 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:09:12,881 cart item = {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:09:12,882 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:09:12,882 cart item = {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:10:21,236 views cart_summary: {cart}
+INFO 2024-06-28 21:10:21,255 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:10:21,256 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:10:21,258 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:11:29,484 views cart_summary: {cart}
+INFO 2024-06-28 21:11:29,501 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:11:29,503 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:11:29,505 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:10,956 views cart_summary: {cart}
+INFO 2024-06-28 21:12:10,976 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:10,978 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:10,979 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:18,263 views cart_summary: {cart}
+INFO 2024-06-28 21:12:18,266 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:18,268 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:18,269 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:18,661 views cart_summary: {cart}
+INFO 2024-06-28 21:12:18,664 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:18,666 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:18,667 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:19,108 views cart_summary: {cart}
+INFO 2024-06-28 21:12:19,110 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:19,112 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:12:19,113 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:13:30,473 views cart_summary: {cart}
+INFO 2024-06-28 21:13:30,490 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:13:30,492 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:13:30,493 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:13:30,493 cart item = dres_01 - XL
+INFO 2024-06-28 21:13:30,494 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:13:30,494 cart item = Suknia_05 - XXL
+INFO 2024-06-28 21:15:20,138 views cart_summary: {cart}
+INFO 2024-06-28 21:15:20,156 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:15:20,158 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:15:20,160 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:15:20,160 cart price 81.00
+INFO 2024-06-28 21:15:20,161 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:15:20,161 cart price 255.00
+INFO 2024-06-28 21:16:19,644 views cart_summary: {cart}
+INFO 2024-06-28 21:16:19,665 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:19,667 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:19,668 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:19,669 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:22,891 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:22,893 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:22,894 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:23,411 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:23,413 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:23,414 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,116 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:25,117 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,118 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,333 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:25,334 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,335 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,502 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:25,503 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,505 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,651 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:25,652 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:25,653 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:26,251 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:26,252 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:26,253 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:26,411 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:26,412 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:26,413 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,090 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:28,091 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,092 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,332 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:28,333 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,334 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,457 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:28,459 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,460 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,638 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:28,639 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,640 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,786 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:28,787 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:28,788 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:29,947 views cart_summary: {cart}
+INFO 2024-06-28 21:16:29,950 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:29,952 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:29,954 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:29,955 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:31,516 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:31,517 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:31,518 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:31,738 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:31,740 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:31,740 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:36,072 views cart_summary: {cart}
+INFO 2024-06-28 21:16:36,075 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:36,077 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:36,079 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:36,080 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:37,499 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:37,501 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:37,502 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:38,153 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:38,154 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:38,155 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,049 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:39,050 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,051 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,216 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:39,217 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,218 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,328 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:39,329 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,330 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,488 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:39,489 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:39,490 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:55,940 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:55,941 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:55,942 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:56,600 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:16:56,602 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:16:56,603 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:14,565 views cart_summary: {cart}
+INFO 2024-06-28 21:17:14,586 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:14,587 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:14,589 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:14,590 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:18,437 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:17:18,438 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:18,439 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:44,850 cart Updated {'3': 3, '34': 1}
+INFO 2024-06-28 21:17:44,852 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:17:44,853 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:44,270 views cart_summary: {cart}
+INFO 2024-06-28 21:21:44,297 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:44,299 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:44,301 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:44,302 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:48,913 cart Updated {'3': 1, '34': 1}
+INFO 2024-06-28 21:21:48,915 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:48,916 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:49,547 cart Updated {'3': 1, '34': 1}
+INFO 2024-06-28 21:21:49,548 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:49,549 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:51,521 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:21:51,522 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:21:51,523 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:26,701 views cart_summary: {cart}
+INFO 2024-06-28 21:22:26,721 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:26,723 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:26,725 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:26,727 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:32,864 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:22:32,865 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:32,866 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:32,867 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:32,868 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:35,115 cart Updated {'3': 1, '34': 1}
+INFO 2024-06-28 21:22:35,116 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:35,118 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:35,119 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:22:35,120 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:01,866 views cart_summary: {cart}
+INFO 2024-06-28 21:23:01,893 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:01,895 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:01,896 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:01,897 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:06,752 cart Updated {'3': 3, '34': 1}
+INFO 2024-06-28 21:23:06,754 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:06,755 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:06,757 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:06,758 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:08,849 cart Updated {'3': 1, '34': 1}
+INFO 2024-06-28 21:23:08,850 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:08,851 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:08,852 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:08,853 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:14,000 cart Updated {'3': 1, '34': 1}
+INFO 2024-06-28 21:23:14,001 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:14,002 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:14,003 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:14,005 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,329 cart Updated {'3': 3, '34': 1}
+INFO 2024-06-28 21:23:16,331 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,332 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,333 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,334 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,705 cart Updated {'3': 3, '34': 1}
+INFO 2024-06-28 21:23:16,708 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,709 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,711 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:23:16,712 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:22,500 views cart_summary: {cart}
+INFO 2024-06-28 21:24:22,522 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:22,524 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:22,526 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:22,527 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:26,032 cart Updated {'3': 2, '34': 1}
+INFO 2024-06-28 21:24:26,034 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:26,035 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:24:26,036 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:04,638 views cart_summary: {cart}
+INFO 2024-06-28 21:26:04,660 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:04,662 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:04,663 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:04,664 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:15,487 cart Updated {'3': 2, '34': 2}
+INFO 2024-06-28 21:26:15,488 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:15,490 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:15,491 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:15,491 cart id = 3
+INFO 2024-06-28 21:26:15,492 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:15,492 cart id = 34
+INFO 2024-06-28 21:26:19,431 cart Updated {'3': 2, '34': 3}
+INFO 2024-06-28 21:26:19,432 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:19,433 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:19,434 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:19,434 cart id = 3
+INFO 2024-06-28 21:26:19,435 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:19,435 cart id = 34
+INFO 2024-06-28 21:26:59,430 views cart_summary: {cart}
+INFO 2024-06-28 21:26:59,452 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:59,454 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:59,456 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:26:59,457 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:02,432 cart Updated {'3': 3, '34': 3}
+INFO 2024-06-28 21:27:02,433 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:02,434 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:02,435 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:02,435 cart id = 3
+INFO 2024-06-28 21:27:05,238 cart Updated {'3': 1, '34': 3}
+INFO 2024-06-28 21:27:05,239 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:05,240 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:05,241 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:05,241 cart id = 3
+INFO 2024-06-28 21:27:10,824 cart Updated {'3': 1, '34': 3}
+INFO 2024-06-28 21:27:10,827 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:10,828 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:10,829 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:10,829 cart id = 3
+INFO 2024-06-28 21:27:11,254 cart Updated {'3': 1, '34': 3}
+INFO 2024-06-28 21:27:11,255 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:11,256 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:11,257 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:11,257 cart id = 3
+INFO 2024-06-28 21:27:27,423 cart Updated {'3': 3, '34': 3}
+INFO 2024-06-28 21:27:27,424 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:27,425 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:27,426 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:27,426 cart id = 3
+INFO 2024-06-28 21:27:29,894 cart Updated {'3': 1, '34': 3}
+INFO 2024-06-28 21:27:29,896 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:29,897 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:29,898 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:27:29,898 cart id = 3
+INFO 2024-06-28 21:29:01,854 cart Updated {'3': 1, '34': 3}
+INFO 2024-06-28 21:29:01,855 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:29:01,856 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:29:01,857 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:29:01,857 cart id = 3
+INFO 2024-06-28 21:30:06,670 views cart_summary: {cart}
+INFO 2024-06-28 21:30:06,687 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:06,689 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:06,691 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:06,692 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:09,938 cart Updated {'3': 2, '34': 3}
+INFO 2024-06-28 21:30:09,939 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:09,940 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:09,941 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:09,941 cart id = 3
+INFO 2024-06-28 21:30:59,951 views cart_summary: {cart}
+INFO 2024-06-28 21:30:59,954 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:59,956 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:59,957 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:30:59,958 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:31:01,219 cart Updated {'3': 2, '34': 3}
+INFO 2024-06-28 21:31:01,220 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:31:01,221 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:31:01,222 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:31:01,222 cart id = 3
+INFO 2024-06-28 21:32:34,716 views cart_summary: {cart}
+INFO 2024-06-28 21:32:34,718 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:34,719 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:34,721 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:34,722 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:37,884 views cart_summary: {cart}
+INFO 2024-06-28 21:32:37,886 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:37,887 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:37,889 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:37,890 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:41,666 cart Updated {'3': 2, '34': 3}
+INFO 2024-06-28 21:32:41,667 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:41,668 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:41,669 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:32:41,669 cart id = 3
+INFO 2024-06-28 21:33:15,348 views cart_summary: {cart}
+INFO 2024-06-28 21:33:15,351 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:15,352 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:15,353 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:15,354 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:16,818 cart Updated {'3': 2, '34': 3}
+INFO 2024-06-28 21:33:16,819 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:16,820 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:16,821 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:16,821 cart id = 3
+INFO 2024-06-28 21:33:21,137 cart Updated {'3': 3, '34': 3}
+INFO 2024-06-28 21:33:21,139 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:21,140 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:21,141 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:21,141 cart id = 3
+INFO 2024-06-28 21:33:23,848 cart Updated {'3': 1, '34': 3}
+INFO 2024-06-28 21:33:23,849 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:23,850 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 3, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:23,851 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:23,851 cart id = 3
+INFO 2024-06-28 21:33:26,520 cart Updated {'3': 1, '34': 2}
+INFO 2024-06-28 21:33:26,521 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:26,522 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:26,523 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:26,523 cart id = 3
+INFO 2024-06-28 21:33:26,524 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:26,524 cart id = 34
+INFO 2024-06-28 21:33:57,035 views cart_summary: {cart}
+INFO 2024-06-28 21:33:57,039 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:57,041 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:57,043 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:57,044 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:58,817 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:58,818 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:58,830 views cart_summary: {cart}
+INFO 2024-06-28 21:33:58,833 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:58,834 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:58,836 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:33:58,837 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:00,169 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:00,171 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:00,184 views cart_summary: {cart}
+INFO 2024-06-28 21:34:00,187 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:00,188 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:00,189 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:00,191 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:01,280 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:01,281 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:01,295 views cart_summary: {cart}
+INFO 2024-06-28 21:34:01,297 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:01,298 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:01,300 cart product_item: {'product_size_object': <ProductSize: dres_01 - XL>, 'qty': 1, 'qtys': [1, 2, 3]}
+INFO 2024-06-28 21:34:01,301 cart product_item: {'product_size_object': <ProductSize: Suknia_05 - XXL>, 'qty': 2, 'qtys': [1, 2, 3]}

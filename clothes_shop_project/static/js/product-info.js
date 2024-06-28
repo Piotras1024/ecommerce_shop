@@ -6,7 +6,6 @@
         var maxQuantity = parseInt(selectedSize.getAttribute('data-availability'), 10);
         var cena_produktow= document.getElementById('cena_produktow');
 
-        console.log('maxQuantity: ', maxQuantity);
 
         quantitySelect.innerHTML = '';
         if (maxQuantity === 0) {
@@ -37,28 +36,33 @@
     quantitySelect.addEventListener('change', updatePrice);
 }
 
-    $(document).on('click', '#add-button', function(e){
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: URL_ADD,
-            data: {
-                product_id: $(this).val(),
-                product_size: $('#size-select option:selected').val().split(' - ')[0],
-                product_quantity: $('#quantity-select').val(),
-                csrfmiddlewaretoken: CSRFMIDDLEWARETOKEN,
-                action: 'post'
-            },
-            success: function(json){
-                document.getElementById("cart-qty").textContent = json.qty;
-                alert('Produkt dodany do koszyka');
-            },
-            error: function(xhr, errmsg, err){
-                alert("Wystąpił błąd: " + errmsg);
-            }
-        });
-    });
+  $(document).on('click', '#add-button', function(e){
+    e.preventDefault();
+    var sizeSelect = document.getElementById('size-select');
+    var selectedSize = sizeSelect.options[sizeSelect.selectedIndex];
+    var productSizeId = selectedSize.value; // pobieramy ps.id z wybranego elementu
+    var quantity = $('#quantity-select').val();
 
+    console.log(productSizeId)
+
+    $.ajax({
+        type: 'POST',
+        url: URL_ADD,
+        data: {
+            productsize_id: productSizeId, // przekazujemy productsize_id zamiast product_id
+            product_quantity: quantity,
+            csrfmiddlewaretoken: CSRFMIDDLEWARETOKEN,
+            action: 'post'
+        },
+        success: function(json){
+            document.getElementById("cart-qty").textContent = json.qty;
+            alert('Produkt dodany do koszyka');
+        },
+        error: function(xhr, errmsg, err){
+            alert("Wystąpił błąd: " + errmsg);
+        }
+    });
+});
     // Initialize quantity options when page loads
     document.addEventListener("DOMContentLoaded", function() {
         updateQuantityOptions();

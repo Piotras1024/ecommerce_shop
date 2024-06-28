@@ -1,7 +1,10 @@
 from decimal import Decimal
 from itertools import product
+import logging
 
 from store_clothes.models import Product, ProductSize, Size
+
+logger = logging.getLogger('custom_logger')
 
 
 class Cart:
@@ -11,94 +14,101 @@ class Cart:
         self.session = request.session
 
         # Returning user - obtain his/her existing session
-        cart = self.session.get('session_key')
+        cart = self.session.get('cart')
 
         # New user - generate new session
 
-        if 'session_key' not in request.session:
+        if 'cart' not in request.session:
 
-            cart = self.session['session_key'] = {}
+            cart = self.session['cart'] = {}
 
         self.cart = cart
 
-    def add(self, product, product_qty, size):
-        productsize = ProductSize.objects.get(product=product, size=size)
-        product_size_id = productsize.id
+    def add(self, productsize_id, product_qty):
 
-        if product_size_id not in self.cart:
-            self.cart[product_size_id] = {'price': str(product.price), 'qty': product_qty}
-        else:
-            self.cart[product_size_id]['qty'] = product_qty
+        self.cart[productsize_id] = product_qty
 
         self.session.modified = True
 
-    def delete(self, product_id,size_id ):
+        logger.info(f'Added product {self.cart}')
 
-        product_id = str(product_id)
+
+    def delete(self, product_id, size_id):
 
         if product_id in self.cart:
-            del self.cart[product_id]
+            if size_id in self.cart[product_id]:
+                del self.cart[product_id][size_id]
+
+                # Jeśli po usunięciu rozmiaru, produkt nie ma więcej rozmiarów w koszyku, usuń również produkt
+                if not self.cart[product_id]:
+                    del self.cart[product_id]
 
         self.session.modified = True
 
-    def update(self, product, product_qty, size):
+    def update(self, productsize_id, product_qty):
 
-        product_id = str(product.id)
-        size_id = str(size.id)
-
-        if product_id not in self.cart:
-
-            self.cart[product_id] = {}
-
-        if size_id in self.cart[product_id]:
-
-            self.cart[product_id][size_id]['qty'] = product_qty
-
-        else:
-
-            self.cart[product_id][size_id] = {'price': str(product.price), 'qty': product_qty, 'size': size.size_name}
+        self.cart[productsize_id] = product_qty
 
         self.session.modified = True
+
+        logger.info(f'Updated {self.cart}')
+
 
     def __len__(self):
         total_qty = 0
-        for product_id, sizes in self.cart.items():
-            for size_id, details in sizes.items():
-                total_qty += details['qty']
+        for qty in self.cart.values():
+                total_qty += qty
         return total_qty
 
     def __iter__(self):
-        all_product_ids = self.cart.keys()
-        products = Product.objects.filter(id__in=all_product_ids)
-        cart_copy = self.cart.copy()
+        for product_size_id, qty in self.cart.items():
+            product_size_object = ProductSize.objects.filter(id=product_size_id)[0]
+            result = {
+                'product_size_object': product_size_object,
+                'qty': qty,
+                'qtys': list(range(1, product_size_object.availability + 1))
+            }
+            logger.info(f'product_item: {result}')
+            yield result
 
-        for product in products:
-            product_id = str(product.id)
-            for size_id, details in cart_copy[product_id].items():
-                try:
-                    # Ensure size_id is a number before attempting to get the Size object
-                    size_id_int = int(size_id)
-                    size = Size.objects.get(id=size_id_int)
-                except (ValueError, Size.DoesNotExist):
-                    continue  # or handle the error appropriately
-                item = {
-                    'product': product,
-                    'size': size,
-                    **details,
-                    'total': Decimal(details['price']) * details['qty']
-                }
-                yield item
+
+
+
+
+
+    # def __iter__(self):
+    #     all_product_ids = self.cart.keys()
+    #     products = Product.objects.filter(id__in=all_product_ids)
+    #     cart_copy = self.cart.copy()
+    #
+    #     for product in products:
+    #         product_id = str(product.id)
+    #         for size_id, details in cart_copy[product_id].items():
+    #             try:
+    #                 # Ensure size_id is a number before attempting to get the Size object
+    #                 size_id_int = int(size_id)
+    #                 size = Size.objects.get(id=size_id_int)
+    #             except (ValueError, Size.DoesNotExist):
+    #                 continue  # or handle the error appropriately
+    #             item = {
+    #                 'product': product,
+    #                 'size': size,
+    #                 **details,
+    #                 'total': Decimal(details['price']) * details['qty']
+    #             }
+    #             yield item
 
     def get_total(self):
         total = Decimal('0.00')
         for item in self:
-            total += item['total']
+            total += item["product_size_object"].product.price * item['qty']
+
         return total
 
-    def get_single_total(self, product_id):
-        total = Decimal('0.00')
-        product_id = str(product_id)
-        if product_id in self.cart:
-            for size_id, details in self.cart[product_id].items():
-                total += Decimal(details['price']) * details['qty']
-        return total
+    def get_single_total(self, product_size_id):
+
+        for item in self:
+            logger.info(f'id = {item["product_size_object"].id}')
+            if item["product_size_object"].id == product_size_id:
+                return item["product_size_object"].product.price * item['qty']
+

@@ -32,11 +32,11 @@
                         <div class="row p-3">
                             <div class="col-6">
                                 <label for="size-select">Rozmiar:</label>
-                                {% if sizes_availability %}
+                                {% if product_sizes %}
                                     <select id="size-select" onchange="updateQuantityOptions()">
-                                        {% for size, availability in sizes_availability %}
-                                            <option value="{{ size }}" data-availability="{{ availability }}">
-                                                {{ size }} - dostępne {{ availability }} szt.
+                                        {% for ps in product_sizes %}
+                                            <option value="{{ ps.id }}" data-availability="{{ ps.availability }}">
+                                                {{ ps.size.size_name }} - dostępne {{ ps.availability }} szt.
                                             </option>
                                         {% endfor %}
                                     </select>
