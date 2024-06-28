@@ -5,15 +5,33 @@ from django.http import JsonResponse
 from .cart import Cart
 from store_clothes.models import Product, ProductSize, Size
 
+import pprint
+
 
 # Create your views here.
 
 
 def cart_summary(request):
-
     cart = Cart(request)
+    cart_items_with_sizes = {}
 
-    return render(request, 'cart/cart-summary.html', {'cart': cart})
+    for item in cart:
+        product_sizes = ProductSize.objects.filter(product=item['product']).select_related('size')
+        sizes_availability = {ps.size.size_name: ps.availability for ps in product_sizes}
+        cart_items_with_sizes[item['product'].id] = {
+            'item': item,
+            'sizes_availability': sizes_availability
+        }
+
+    context = {
+        'cart': cart,
+        'cart_items_with_sizes': cart_items_with_sizes
+    }
+
+    # # Raise an exception with the pprint version of the dictionary
+    # raise Exception(pprint.pformat(cart_items_with_sizes.items()))
+
+    return render(request, 'cart/cart-summary.html', context=context)
 
 
 def cart_add(request):
@@ -44,8 +62,8 @@ def cart_delete(request):
 
     if request.POST.get('action') == 'post':
 
-        product_id = int(request.POST.get('product_id'))
-        size_id = str(request.POST.get('size_id'))
+        product_id = request.POST.get('product_id')
+        size_id = request.POST.get('size_id')
 
         cart.delete(product_id=product_id, size_id=size_id)
 
