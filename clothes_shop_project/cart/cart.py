@@ -22,20 +22,13 @@ class Cart:
         self.cart = cart
 
     def add(self, product, product_qty, size):
+        productsize = ProductSize.objects.get(product=product, size=size)
+        product_size_id = productsize.id
 
-        product_id = str(product.id)
-        size_id = str(size.id)
-
-        if product_id not in self.cart:
-
-            self.cart[product_id] = {}
-
-        if size_id in self.cart[product_id]:
-            self.cart[product_id][size_id]['qty'] = product_qty
-
+        if product_size_id not in self.cart:
+            self.cart[product_size_id] = {'price': str(product.price), 'qty': product_qty}
         else:
-
-            self.cart[product_id][size_id] = {'price': str(product.price), 'qty': product_qty, 'size': size.size_name}
+            self.cart[product_size_id]['qty'] = product_qty
 
         self.session.modified = True
 
